@@ -1,0 +1,20 @@
+ .caixas-quadradas {
+     border: 2px solid red;
+     padding: 10px;
+     margin: 10px;
+     background: yellow;
+     display: block;
+     width: 200px;
+     height: 200px;
+ }
+
+ #caixas-redondas {
+     border: 2px solid red;
+     padding: 10px;
+     margin: 10px;
+     background: yellow;
+     display: block;
+     width: 200px;
+     height: 200px;
+     border-radius: 15px;
+ }
