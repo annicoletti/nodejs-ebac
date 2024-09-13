@@ -1,0 +1,9 @@
+## versionamento padrão SEMVER
+
+0.0.0
+MAJOR (Funcionalidades imcompativeis com versão anterior) - MINOR (novas funcionalidades) - PATCH (correções de bugs)
+
+- SEMPRE atualize os patchs
+- AS VEZES atualize os minors
+- TOME CUIDADO na atualização dos majors
+
