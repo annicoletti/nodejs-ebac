@@ -15,3 +15,15 @@ npm -v # should print `10.8.2`
 ### npm - gerenciador de pacotes oficial do js
 npm i passport
 nom install passport
+
+
+## instalar dependencias
+
+#gerenciar rotas
+npm install --save express
+
+#reinderizar html de forma dinamica
+npm install --save ejs
+
+#reload do server (dev)
+npm install --save-dev nodemon
