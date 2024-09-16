@@ -4,6 +4,7 @@ const path = require('path') //padrão do node para navvegar entre os arquivos
 const routerPrincipal = require('./routes/principal');
 const routerPedidos = require('./routes/pedidos');
 const routerPerfil = require('./routes/perfil');
+const { connect } = require('./models');
 
 const app = express();
 const porta = 3000;
@@ -18,5 +19,6 @@ app.use('/perfil', routerPerfil);
 app.use('/', routerPrincipal);
 
 app.listen(porta, () => {
+    connect();
     console.log(`Servidor ouvindo na porta ${porta}`);
 });
