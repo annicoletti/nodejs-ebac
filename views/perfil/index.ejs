@@ -65,8 +65,12 @@
 <body>
     <div class="profile-container">
         <img src="./gato-dev.png" alt="Foto de Gato">
-        <h1>Yuki Nicoletti</h1>
-        <h2>4 anos</h2>
+
+        <ul>
+            <% perfis.map((perfil) => {%>
+                <li>nome: <%= perfil.nome %>  idade: <%= perfil.idade %></li>
+            <% }) %>
+        </ul>
         <p>Amante de longas sonecas, dono de um charme único, e sempre pronto para um bom prato de ração gourmet.</p>
     </div>
 </body>
