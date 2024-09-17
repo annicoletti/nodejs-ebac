@@ -1,17 +1,16 @@
 const express = require('express');
+const { Pedido } = require('../models');
 
 const router = express.Router();
 
-// router.get('/', (_, res) => {
-//     res.send("Tela raiz de pedidos!");
-// });
-
 //usando o ejs para renderizar views
 router.get('/', (_, res) => {
-    res.render('pedidos/index', {
-        nomeDoUsuario: "André Nicoletti",
+    Pedido.find({}).then((pedidos) => {
+        res.render('pedidos/index', {
+            nomeDoUsuario: "André Nicoletti",
+            pedidos: pedidos,
+        });
     });
 });
-
 
 module.exports = router;
