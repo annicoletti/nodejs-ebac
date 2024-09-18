@@ -1,7 +1,7 @@
 {
-  "name": "npm",
+  "name": "nodejs-ebac",
   "version": "0.0.1",
-  "description": "Estudo de Node.JS",
+  "description": "App NodeJS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,9 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.21.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.4"
+    "express": "^4.21.0",
+    "mongoose": "^8.6.2",
+    "nodemon": "^3.1.4",
+    "save": "^2.9.0",
+    "save-dev": "^0.0.1-security"
   }
 }

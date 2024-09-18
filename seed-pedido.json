@@ -1,0 +1,24 @@
+{
+  "_id": {
+    "$oid": "66e846e97d479e163d3243bd"
+  },
+  "cliente":{
+    "nome": "Rafael",
+    "sobrenome": "Costella"
+  },
+  "pizzas":[
+    {
+      "sabor":"Marguerita",
+      "quantidade":1,
+      "tamanho":"Grande"
+    },
+    {
+      "sabor":"Portuguesa",
+      "quantidade":2,
+      "tamanho":"Grande"
+    }
+  ],
+  "metodoPagamento": "Cartão de crédito",
+  "total": 90.23,
+  "pago": false  
+}

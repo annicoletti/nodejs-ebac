@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Gato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 360px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .profile-container img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-container h1 {
+            font-size: 26px;
+            margin: 15px 0 5px;
+            color: #333;
+        }
+
+        .profile-container p {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .profile-container button {
+            background-color: #FF6347;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .profile-container button:hover {
+            background-color: #ff5233;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-container">
+        <img src="/img/gato-dev.png" alt="Foto de Gato">
+
+        <ul>
+            <% perfis.map((perfil) => {%>
+                <li>nome: <%= perfil.nome %>  idade: <%= perfil.idade %></li>
+            <% }) %>
+        </ul>
+        <p>Amante de longas sonecas, dono de um charme único, e sempre pronto para um bom prato de ração gourmet.</p>
+    </div>
+</body>
+
+</html>
