@@ -13,6 +13,9 @@ const porta = 3000;
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+//configurando pasta publica
+app.use(express.static(path.join(__dirname, 'public')));
+
 //routers
 app.use('/pedidos', routerPedidos);
 app.use('/perfil', routerPerfil);
